@@ -1,38 +1,118 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Movie Coming soon next to you!</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</head>
-<body>
-<!--Home Page-->
- <div class="container">
-  <div class="jumbotron">
-    <h1></h1>
-    <p></p>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p></p>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <h3></h3>
-      <p></p>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <h3></h3>
-      <p></p>
-      <p></p>
-    </div>
-  </div>
-</div>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-</body>
+    <title>  | Coming Soon!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="bg">
+   <div class="bg-color">
+      <div class="container content">
+   
+        <div class="row">
+          <div class="sun clearfix">
+            <div class="col-sm-12">
+               <h1>DISNEY PRESENTS</h1>
+               <h3>THE FINEST HOURS</h3>
+               <h2>BASED ON THE INCREDIBLE TRUE STORY</h2>        
+            </div>
+            <div id="left-block" class="col-sm-4 text-center">
+              <img class="img-responsive" src="assets/images/tab.png" alt="tab"/>
+            </div>
+            <div id="right-block" class="col-sm-8">
+              <div class="row">
+                 <div class="col-sm-offset-1 col-sm-10">
+                  <div class="timing">
+                    <div id="count-down" data-date="2016-01-15 00:00:00">
+                      
+                    </div>
+                  </div>
+                  <!-- /.timing -->
+                 </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-offset-2 col-sm-8">
+                <p class="alert-success"></p>
+                <p class="alert-warning"></p>
+
+
+                </div>
+              </div>                    
+              <p class="followus"></p>
+              <ul class="social-icon">
+                <li><a href=""><i class="fa fa-camera-retro"></i></a></li>
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+              </ul>              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF CONTAINER -->
+   </div>
+ </div>
+   
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/TimeCircles.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.placeholder.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        // Invoke the plugin
+        $('input, textarea').placeholder();
+      });
+    </script>
+    <script>
+      $("#count-down").TimeCircles(
+       {   
+           circle_bg_color: "#8a7f71",
+           use_background: true,
+           bg_width: 1.0,
+           fg_width: 0.02,
+           time: {
+                Days: { color: "#fefeee" },
+                Hours: { color: "#fefeee" },
+                Minutes: { color: "#fefeee" },
+                Seconds: { color: "#fefeee" }
+            }
+       }
+    );
+
+    </script>
+    
+  </body>
 </html>
