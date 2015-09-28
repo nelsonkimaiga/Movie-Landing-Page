@@ -1,103 +1,185 @@
-body, html {
-  font-family: 'Lato', sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  background:white;
-  color: #3a3a3a;
-  height: 100%;
-}
-h1, h2, h3, h4, h5, h6 {
-	padding-bottom: 5px;
-	color: #3d5054;
-	line-height: 1em;
-	font-weight: normal;
-	margin: 0 0 10px;
-}
-h1 {
-	font-family: 'Lobster', cursive;
-	text-transform: capitalize;
-	color: #ffd57a;
-	margin-bottom: 65px;
-}
-h2 {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 700;
-	color: #feff96;
-	text-transform: uppercase;
-}
-h3 {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 400;
-	color: #fff;
+
+#header-custom {
+    
+
 }
 
-h1 { font-size: 45px;}
-h2 { font-size: 36px;}
-h3 { font-size: 20px;}
-h4 { font-size: 18px;}
-h5 { font-size: 16px;}
-h6 { font-size: 14px;}
-
-p {
-	
-	font-weight: normal;
+.header-custom {
+width: 100%;
+height: 100%
 }
 
-a {color: #1b727b}
-a:hover {color: #416467; text-decoration: none;}
-a:active {color: #416467;}
+.slider {
 
-.form-horizontal:after,
-.form-horizontal:before {
-	content: "";
-	display: table;
-}
-.form-horizontal:after,
-.form-horizontal:before
- {
-	clear: both;
 }
 
-/*-Background image--*/
-
-.bg {
-	background: url(../images/bg.jpg)  no-repeat center center;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-    height: 100%;
-	position: relative;
-	text-align:center;
+.header-img {
+width: 100%;
+height: 100%;
+    
+filter: brightness(30%);
+-webkit-filter: brightness(30%);
+-moz-filter: brightness(30%);
+-o-filter: brightness(30%);
+-ms-filter: brightness(30%);
 }
 
+.header-text {
+position: absolute;
+top:100px;
+left: 200px;
+z-index: 1;
+font-size: 60px;
+color: #E74C3C;
+font-family: Verdana, Arial, Helvetica, sans-serif
 
-.bg-color
- {
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
+}
+#header-li {
+    margin-left:50%;
+position: absolute;
+top:300px;
+left:100px;
+z-index: 1;
+font-size:60px;
+color:#fff;
+
+font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    
+
 }
 
-/*video clip*/
+.header-title{
+position: absolute;
+top:400px;
+left: 200px;
+z-index: 1;
+font-size: 200px;
+color: #fff;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+}
+   
+   
+
 .container {
-    min-height: 250px;
-    padding-bottom: 50px;
-    margin-top: 50px;
-    -moz-box-shadow:  0 2px 5px 0 #333;
-    -webkit-box-shadow: 0 2px 5px 0 #333;
-    box-shadow: 0 2px 5px 0 #333;
-    position: relative;
-    overflow: hidden;
+width: 1100px;
+margin-left: 50px;
+}
+a:link {
+    text-decoration: none;
+    color: #000;
 }
 
-body, video {
-    background: #222;
-    width:100%;
-    background-size: cover;
-    transition: 1s opacity;
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    left: 0;
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    border-bottom:#f16529 15px solid;
+
+a:active {
+    text-decoration: underline;
+}
+.dec{
+    color:  #f16529;
+}
+
+
+}
+i.hover{
+    background-color: blue;
+    cursor: pointer;
+}
+    
+
+.book {
+font-size:60px;
+color:#E74C3C ;
+  font-style: oblique;
+}
+
+.about
+{
+    margin-top: 70px;
+
+width: 100%;
+    filter: brightness(30%);
+-webkit-filter: brightness(30%);
+-moz-filter: brightness(30%);
+-o-filter: brightness(30%);
+-ms-filter: brightness(30%);
+background:#111118;
+}
+
+
+.event {
+width: 1200px;
+margin-left: 500px;
+color: #fff;
+font-size: 60px;
+margin-top: 70px;
+
+
+}
+.e
+{
+    
+}.notice-event {
+
+background:#29292C ;
+width: 3300px;
+}
+
+.date {
+color: #FFF;
+}
+
+.cont {
+    margin-left: 100px;
+    
+}
+
+.event-head {
+text-align: right;
+margin-right: 100px;
+ 
+}
+
+.tickets {
+width:300px;
+    background:#E74C3C;
+    color:#fff;
+    height:55px;
+    
+         height: 400px;
+         margin-top:  70px;
+}
+
+.portfolio {
+background-image: url("../img/background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 700px;
+width: 100%;
+filter: brightness(20%);
+-webkit-filter: brightness(20%);
+-moz-filter: brightness(20%);
+-o-filter: brightness(20%);
+-ms-filter: brightness(20%);
+
+}
+
+
+.portfolio-text {
+text-align: center;
+font-size:  200px;
+color: #FFF;
+margin-bottom: 10px;
+vertical-align: middle;
+}
+
+.blog {
+
 }
