@@ -1,0 +1,18 @@
+body{
+margin:0;
+padding:0;
+/*background: #000 url(../images/.jpg) top center no-repeat;*/
+font-family: Helvetica Neue, Helvetica, Arial;
+background-color: #536878;
+}
+
+.container{
+width: 636px;
+margin: 0 auto;
+}
+
+.header{
+width:636px;
+float: left;
+padding-top: 20px;
+}
