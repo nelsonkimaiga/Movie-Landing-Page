@@ -1,10 +1,14 @@
-/* Reset */
-
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+html,
+body {
+    font-family: 'Raleway', serif;
+    color: #666;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
 
 body{
-margin:0;
-padding:0;
+
 background: #000 url(../images/bg.jpg) top center no-repeat;
 font-family: 'Raleway', serif;
 }
@@ -180,51 +184,105 @@ width: 636px;
 float: left;
 }
 
-p{
-color: #fff;
-font-size: 16px;
-text-align: center;
+/*responsive design */
+@media only screen and (max-width:1024px) {
+  .navbar-nav {
+      margin-left: -42px;
+  }
 }
 
-.information{
-margin: 20px auto 0 auto;
-padding: 0;
-background: url(../images/form.png) left top no-repeat;
-height: 48px;
-width: 307px;
-padding: 9px 0 0 9px;
+@media only screen and (max-width:800px) {
+  .navbar-nav > li {
+      margin: 0 0px;
+  }
+  .navigation {
+      width: 57%;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+      padding: 0;
+  }
+  .navbar {
+      padding-top: 6px;
+  }
+  .navbar-nav {
+      margin-left: 7px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .navbar-nav > li {
+      margin: 0 0px;
+  }
+  .navigation {
+      width: 57%;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+      padding: 0;
+  }
+  .navbar {
+      padding-top: 6px;
+  }
+  .navbar-nav {
+      margin-left: 7px;
+  }
 }
 
-.main{
-width: 299px;
-height: 37px;
-float: left;
-background: url(../images/field.png) left top no-repeat;
+@media only screen and (max-width:640px) {
+  .navbar-nav {
+      margin-left: 0;
+      margin: 0;
+  }
+  .navbar-nav > li {
+      margin: 0 0px;
+      float: none;
+      display: inline;
+      text-align: right;
+  }
+  .navbar-collapse.in {
+      overflow-y: hidden;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+      border-color: rgba(231, 231, 231, 0);
+  }
+  .navigation {
+        width: 13%;
+    margin-left: 7em;
+  }
 }
 
-.field{
-width: 217px;
-float: left;
-border: none;
-background: none;
-height: 36px;
-padding: 0 10px;
-font-family: Helvetica Neue, Helvetica, Arial;
-color: #304e62;
-font-size: 14px;
-font-weight: bold;
-text-shadow: 1px 1px 0px #ffffff;
-        filter: dropshadow(color=#ffffff, offx=1, offy=1);
+@media only screen and (max-width:480px) {
+  .navigation {
+      width: 18%;
+      margin-left: 3em;
+  }
 }
 
-.go{
-border: 0;
-width: 62px;
-height: 36px;
-float: left;
-background: url(../images/go.png) left top no-repeat;cursor: pointer;
+
+@media only screen and (max-width:320px) {
+  .navbar-toggle {
+      padding: 6px 6px;
+      margin-top: 0px;
+          margin-right: -12px;
+      margin-bottom: 0px;
+  }
+  .navigation {
+      width: 30%;
+      margin-left: 0em;
+  }
+  .navbar-nav > li > a {
+      padding: 10px 0px;
+  }
+  .cl-effect-7 a::before, .cl-effect-7 a::after {
+      left: 0px;
+  }
+  .search-bar input[type="text"] {
+      font-size: 14px;
+          padding: 8px 19px 8px 8px;
+  }
+  .navbar-header {
+      width: 59%;
+  }
+  .navbar-collapse.in {
+      overflow-y: inherit;
+  }
 }
 
-.go:hover{
-background: url(../images/go.png) left bottom no-repeat;
-}
