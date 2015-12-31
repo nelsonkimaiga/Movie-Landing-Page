@@ -14,11 +14,67 @@ width: 636px;
 margin: 0 auto;
 }
 
-.header{
-width:636px;
-float: left;
-padding-top: 20px;
+/*header*/
+.masthead {
+    padding: 15px;
+    position: relative;
+    z-index: 2000;
+    width: 100%;
+    font-family: 'Raleway', serif;
+    transition: all .5s ease;
 }
+
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-brand img {
+    width: 26px;
+    transition: all .5s ease;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+
+.masthead-nav > li + li {
+    margin-left: 10px;
+}
+
+.masthead-nav > li > a {
+    padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #7afbc4;
+}
+
+.masthead-brand {
+    float: left;
+}
+
+.masthead-nav {
+    float: right;
+}
+
+.masthead {
+    position: fixed;
+    top: 0;
+}
+
 
 a.logo{
 width: 300px;
@@ -112,7 +168,7 @@ height: 24px;
 }
 
 .video{
-width: 500px;
+width: 100%;
 height: 278px;
 background: url(../images/video.png) left top no-repeat;
 padding: 68px;
