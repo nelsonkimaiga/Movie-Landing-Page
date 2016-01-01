@@ -13,11 +13,6 @@ background: #000 url(../images/bg.jpg) top center no-repeat;
 font-family: 'Raleway', serif;
 }
 
-.container{
-width: 636px;
-margin: 0 auto;
-}
-
 /*header*/
 .masthead {
     padding: 15px;
